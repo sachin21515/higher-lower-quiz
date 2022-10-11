@@ -25,24 +25,23 @@ def check_followers():
     print(option_b)
     user_input = input("Who has more followers? Type 'A' or 'B': ")
     if user_input.lower() == 'a':
+      os.system('clear')
       if data[num1]['follower_count']>data[num2[0]]['follower_count']:
         current_score[0]+=1
-        os.system('clear')
+        
         print(f"You are right! Current score: {current_score[0]}")
         
       else:
-        os.system('clear')
         print(f"sorry that's wrong Final score: {current_score[0]}")
         game_should_continue = False
     
     else:
+      os.system('clear')
       if data[num1]['follower_count']<data[num2[0]]['follower_count']:
         current_score[0]+=1
-        os.system('clear')
         print(f"You are right! Current score: {current_score[0]}")
         
       else:
-        os.system('clear')
         print(f"sorry that's wrong Final score: {current_score[0]}")
         game_should_continue = False
 
